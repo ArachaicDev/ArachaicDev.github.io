@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             thinking_interval = setInterval(() => {
                 thinking_timer_func();
-            }, 1)
+            }, 1000)
         };
 
         in_thinking_timeout = !in_thinking_timeout;
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             talking_interval = setInterval(() => {
                 talking_timer_func();
-            }, 1)
+            }, 1000)
         };
 
         in_talking_timeout = !in_talking_timeout;
@@ -131,4 +131,4 @@ function talking_timer_func() {
 
 var main_interval = setInterval(() => {
     timer();
-}, 1);
+}, 1000);
