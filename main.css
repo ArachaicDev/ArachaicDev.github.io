@@ -1,0 +1,111 @@
+.timer-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.timer-button {
+    margin-left: 10px;
+    background-color: #04AA6D;
+    border: none;
+    transition-duration: 0.4s;
+    display: block;
+    position: absolute;
+}
+
+#main_timer {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 100px;
+    color: rgb(241, 241, 228);
+    position: absolute;
+}
+
+#thinking_timer {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 50px;
+    color: rgb(241, 241, 228);
+    position: absolute;
+    left: 90px;
+}
+
+#thinking_timeouts {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 50px;
+    color: rgb(241, 241, 228);
+    position: absolute;
+    left: 330px;
+}
+
+#talking_timer {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 50px;
+    color: rgb(241, 241, 228);
+    position: absolute;
+    left: 90px;
+
+}
+
+#talking_timeouts {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 50px;
+    color: rgb(241, 241, 228);
+    position: absolute;
+    left: 330px;
+}
+
+#main_button {
+    display: block;
+    height: 100px;
+    width: 200px;
+    border-radius: 50px;
+    left: 320px;
+}
+
+#main_button:hover {
+    width: 220px;
+    left: 310px;
+}
+
+#thinking_timeout_button {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    left: 215px;
+}
+
+#thinking_timeout_button:hover {
+    width: 110px;
+    left: 210px;
+}
+
+#talking_timeout_button {
+    display: block;
+    height: 50px;
+    width: 100px;
+    border-radius: 25px;
+    left: 215px;
+}
+
+#talking_timeout_button:hover {
+    width: 110px;
+    left: 210px;
+}
+
+#main_timer_container {
+    top: 75px;
+}
+
+#thinking_timer_container {
+    top: 150px;
+}
+
+#talking_timer_container {
+    top: 200px;
+}
+
+html {
+    margin: 0;
+    background-color: rgb(71, 71, 71);
+    padding: 0;
+}
