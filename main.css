@@ -62,8 +62,7 @@
 }
 
 #main_button:hover {
-    width: 220px;
-    left: 310px;
+    filter: brightness(90%);
 }
 
 #thinking_timeout_button {
@@ -75,8 +74,7 @@
 }
 
 #thinking_timeout_button:hover {
-    width: 110px;
-    left: 210px;
+    filter: brightness(90%);
 }
 
 #talking_timeout_button {
@@ -88,8 +86,7 @@
 }
 
 #talking_timeout_button:hover {
-    width: 110px;
-    left: 210px;
+    filter: brightness(90%);
 }
 
 #main_timer_container {
