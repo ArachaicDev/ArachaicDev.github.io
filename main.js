@@ -7,10 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
         let main_button_img = document.getElementById("main_timer_icon");
         if (paused) {
             button.style.backgroundColor = "#f44336";
-            main_button_img.src = "/images/pause.png";
+            main_button_img.src = "pause.png";
         } else {
             button.style.backgroundColor = "#04AA6D";
-            main_button_img.src = "/images/play.png";
+            main_button_img.src = "play.png";
         }
 
         paused = !paused;
@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", function () {
         if (in_thinking_timeout) {
             clearInterval(window.thinking_interval);
             thinking_button.style.backgroundColor = "#04AA6D";
-            thinking_button_img.src = "/images/play.png";
+            thinking_button_img.src = "play.png";
             document.getElementById("thinking_timer").innerHTML = "4:00";
 
         } else {
             thinking_timer = 240;
             thinking_button.style.backgroundColor = "#f44336";
-            thinking_button_img.src = "/images/stop.png";
+            thinking_button_img.src = "stop.png";
             if (!paused) {
                 button.dispatchEvent(new Event("click"));
             };
@@ -51,13 +51,13 @@ document.addEventListener("DOMContentLoaded", function () {
         if (in_talking_timeout) {
             clearInterval(window.talking_interval);
             talking_button.style.backgroundColor = "#04AA6D";
-            talking_button_img.src = "/images/play.png";
+            talking_button_img.src = "play.png";
             document.getElementById("talking_timer").innerHTML = "4:00";
 
         } else {
             talking_timer = 240;
             talking_button.style.backgroundColor = "#f44336";
-            talking_button_img.src = "/images/stop.png";
+            talking_button_img.src = "stop.png";
             if (!paused) {
                 button.dispatchEvent(new Event("click"));
             };
@@ -84,7 +84,7 @@ function timer() {
     if (paused) { return; }
 
     if (main_timer < 2) {
-        new Audio('/sounds/timer.mp3').play()
+        new Audio('timer.mp3').play()
         clearInterval(main_interval);
     }
 
@@ -97,7 +97,7 @@ function timer() {
 
 function thinking_timer_func() {
     if (thinking_timer < 2) {
-        new Audio('/sounds/timer.mp3').play()
+        new Audio('timer.mp3').play()
         thinking_button.dispatchEvent(new Event("click"));
         button.dispatchEvent(new Event("click"));
         thinking_timeouts++;
@@ -114,7 +114,7 @@ function thinking_timer_func() {
 
 function talking_timer_func() {
     if (talking_timer < 2) {
-        new Audio('/sounds/timer.mp3').play()
+        new Audio('timer.mp3').play()
         talking_button.dispatchEvent(new Event("click"));
         button.dispatchEvent(new Event("click"));
         talking_timeouts++;
