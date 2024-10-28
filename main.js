@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
             clearInterval(window.thinking_interval);
             thinking_button.style.backgroundColor = "#04AA6D";
             thinking_button_img.src = "play.png";
-            document.getElementById("thinking_timer").innerHTML = "4:00";
+            document.getElementById("thinking_timer").innerHTML = "2:00";
 
         } else {
-            thinking_timer = 240;
+            thinking_timer = 120;
             thinking_button.style.backgroundColor = "#f44336";
             thinking_button_img.src = "stop.png";
             if (!paused) {
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 var main_timer = 2400;
-var thinking_timer = 240;
+var thinking_timer = 120;
 var talking_timer = 240;
 var paused = true;
 var in_talking_timeout = false;
